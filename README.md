@@ -132,28 +132,6 @@ git --version
 
 ---
 
-## Troubleshooting
-
-### Common Issues
-
-**Node.js/npm not found after installation:**
-- Restart your terminal/command prompt
-- On Windows: Restart your computer
-- Verify PATH environment variable includes Node.js
-
-**Permission errors on Mac:**
-- Use `sudo` prefix: `sudo npm install`
-- Or configure npm to use a different directory
-
-**Port 3000 already in use:**
-- The app will prompt to use a different port
-- Or manually specify: `npm start -- --port 3001`
-
-**Dependency installation fails:**
-- Clear npm cache: `npm cache clean --force`
-- Delete `node_modules` and `package-lock.json`, then run `npm install`
-
----
 
 ## Available Scripts
 
@@ -210,17 +188,3 @@ UIDesigner/
 - **Tailwind CSS** - Utility-first CSS framework
 - **Lucide React** - Icon library
 - **React Testing Library** - Testing utilities
-
-## Getting Help
-
-If you encounter any issues:
-
-1. Check the [Troubleshooting](#troubleshooting) section above
-2. Search for similar issues in the project's issue tracker
-3. Create a new issue with detailed information about the problem
-
-## Learn More
-
-- [React Documentation](https://reactjs.org/)
-- [Create React App Documentation](https://facebook.github.io/create-react-app/docs/getting-started)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
