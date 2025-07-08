@@ -1,70 +1,226 @@
-# Getting Started with Create React App
+# UIDesigner
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React application for UI design and prototyping.
+
+## Prerequisites
+
+Before setting up this project, you'll need to install the following software:
+
+### Required Software
+- **Node.js** (version 18 or higher)
+- **npm** (comes with Node.js)
+- **Git** (for version control)
+- **Code Editor** (VS Code recommended)
+
+---
+
+## Setup Instructions
+
+### For Windows Users
+
+#### Step 1: Install Node.js and npm
+1. Go to [nodejs.org](https://nodejs.org/)
+2. Download the **LTS version** (Long Term Support)
+3. Run the installer and follow the setup wizard
+4. Accept all default settings
+5. Verify installation by opening **Command Prompt** and running:
+   ```cmd
+   node --version
+   npm --version
+   ```
+
+#### Step 2: Install Git
+1. Go to [git-scm.com](https://git-scm.com/)
+2. Download Git for Windows
+3. Run the installer with default settings
+4. Verify installation:
+   ```cmd
+   git --version
+   ```
+
+#### Step 3: Install a Code Editor (Optional but Recommended)
+1. Download [Visual Studio Code](https://code.visualstudio.com/)
+2. Install with default settings
+3. Recommended extensions:
+   - ES7+ React/Redux/React-Native snippets
+   - Prettier - Code formatter
+   - Auto Rename Tag
+   - Bracket Pair Colorizer
+
+#### Step 4: Clone and Setup the Project
+1. Open **Command Prompt** or **PowerShell**
+2. Navigate to your desired directory:
+   ```cmd
+   cd C:\Users\YourUsername\Documents
+   ```
+3. Clone the repository:
+   ```cmd
+   git clone [repository-url]
+   cd UIDesigner
+   ```
+4. Install dependencies:
+   ```cmd
+   npm install
+   ```
+5. Start the development server:
+   ```cmd
+   npm start
+   ```
+
+---
+
+### For Mac Users
+
+#### Step 1: Install Node.js and npm
+1. Go to [nodejs.org](https://nodejs.org/)
+2. Download the **LTS version** (Long Term Support)
+3. Run the .pkg installer and follow the setup wizard
+4. Verify installation by opening **Terminal** and running:
+   ```bash
+   node --version
+   npm --version
+   ```
+
+**Alternative: Install using Homebrew (if you have it)**
+```bash
+brew install node
+```
+
+#### Step 2: Install Git
+Git comes pre-installed on macOS, but you can update it:
+
+**Using Homebrew:**
+```bash
+brew install git
+```
+
+**Or download from:** [git-scm.com](https://git-scm.com/)
+
+Verify installation:
+```bash
+git --version
+```
+
+#### Step 3: Install a Code Editor (Optional but Recommended)
+1. Download [Visual Studio Code](https://code.visualstudio.com/)
+2. Move the app to your Applications folder
+3. Recommended extensions:
+   - ES7+ React/Redux/React-Native snippets
+   - Prettier - Code formatter
+   - Auto Rename Tag
+   - Bracket Pair Colorizer
+
+#### Step 4: Clone and Setup the Project
+1. Open **Terminal**
+2. Navigate to your desired directory:
+   ```bash
+   cd ~/Documents
+   ```
+3. Clone the repository:
+   ```bash
+   git clone [repository-url]
+   cd UIDesigner
+   ```
+4. Install dependencies:
+   ```bash
+   npm install
+   ```
+5. Start the development server:
+   ```bash
+   npm start
+   ```
+
+---
+
+## Troubleshooting
+
+### Common Issues
+
+**Node.js/npm not found after installation:**
+- Restart your terminal/command prompt
+- On Windows: Restart your computer
+- Verify PATH environment variable includes Node.js
+
+**Permission errors on Mac:**
+- Use `sudo` prefix: `sudo npm install`
+- Or configure npm to use a different directory
+
+**Port 3000 already in use:**
+- The app will prompt to use a different port
+- Or manually specify: `npm start -- --port 3001`
+
+**Dependency installation fails:**
+- Clear npm cache: `npm cache clean --force`
+- Delete `node_modules` and `package-lock.json`, then run `npm install`
+
+---
 
 ## Available Scripts
 
 In the project directory, you can run:
 
 ### `npm start`
-
-Runs the app in the development mode.\
+Runs the app in development mode.  
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
+The page will reload when you make changes.  
 You may also see any lint errors in the console.
 
 ### `npm test`
-
-Launches the test runner in the interactive watch mode.\
+Launches the test runner in interactive watch mode.  
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
-
-Builds the app for production to the `build` folder.\
+Builds the app for production to the `build` folder.  
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
+The build is minified and the filenames include the hashes.  
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
 ### `npm run eject`
-
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Project Structure
+
+```
+UIDesigner/
+├── public/
+│   ├── index.html
+│   └── favicon.ico
+├── src/
+│   ├── components/
+│   ├── App.js
+│   ├── App.css
+│   ├── index.js
+│   └── index.css
+├── package.json
+├── package-lock.json
+├── tailwind.config.js
+├── postcss.config.js
+└── README.md
+```
+
+## Technologies Used
+
+- **React** - Frontend framework
+- **Tailwind CSS** - Utility-first CSS framework
+- **Lucide React** - Icon library
+- **React Testing Library** - Testing utilities
+
+## Getting Help
+
+If you encounter any issues:
+
+1. Check the [Troubleshooting](#troubleshooting) section above
+2. Search for similar issues in the project's issue tracker
+3. Create a new issue with detailed information about the problem
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [React Documentation](https://reactjs.org/)
+- [Create React App Documentation](https://facebook.github.io/create-react-app/docs/getting-started)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
