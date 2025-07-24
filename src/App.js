@@ -40,6 +40,9 @@ import Streaks3 from './components/Streaks3';
 import Profile from './components/Profile';
 import Activity from './components/Activity';
 import CreatePost from './components/CreatePost';
+import RoutineBuilderVariation1 from './components/RoutineBuilderVariation1';
+import RoutineBuilderVariation2 from './components/RoutineBuilderVariation2';
+import RoutineBuilderVariation3 from './components/RoutineBuilderVariation3';
 
 function App() {
   return (
@@ -336,6 +339,27 @@ function App() {
             <div className="text-center">
               <h3 className="text-lg font-medium mb-4 text-gray-600">Post Creation Interface</h3>
               <CreatePost />
+            </div>
+          </div>
+        </div>
+
+        {/* Routine Builder Variations */}
+        <div className="mb-12">
+          <h2 className="text-2xl font-semibold mb-6 text-gray-700">
+            Routine Builder Variations
+          </h2>
+          <div className="flex gap-8 justify-center flex-wrap">
+            <div className="text-center">
+              <h3 className="text-lg font-medium mb-4 text-gray-600">Calendar-Based Scheduler</h3>
+              <RoutineBuilderVariation1 />
+            </div>
+            <div className="text-center">
+              <h3 className="text-lg font-medium mb-4 text-gray-600">Timeline Flow Builder</h3>
+              <RoutineBuilderVariation2 />
+            </div>
+            <div className="text-center">
+              <h3 className="text-lg font-medium mb-4 text-gray-600">Card-Based Modular</h3>
+              <RoutineBuilderVariation3 />
             </div>
           </div>
         </div>
